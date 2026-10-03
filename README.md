@@ -45,19 +45,8 @@ The project includes a **complete CAD model of the robot**, including its mechan
 
 ### Full Robot CAD
 
-![Full Robot CAD](CAD/full-robot-model.png)
+<img width="1144" height="768" alt="Снимок экрана 2026-10-03 122635" src="https://github.com/user-attachments/assets/6d762b6f-f5a8-4741-a141-4e8284fbf51b" />
 
-### Exploded View
-
-![Exploded View](CAD/robot-exploded-view.png)
-
-### Robot Assembly
-
-![Robot Assembly](CAD/robot-assembly.png)
-
-### Chassis
-
-![Chassis](CAD/chassis.png)
 
 ---
 
@@ -98,27 +87,7 @@ The tire was designed specifically for the robot, and a **custom silicone mold**
 
 ### Tire CAD
 
-![Tire CAD](Tire/tire-cad.png)
-
-### Tire Drawing
-
-![Tire Drawing](Tire/tire-drawing.png)
-
-### Silicone Mold CAD
-
-![Mold CAD](Tire/silicone-mold-cad.png)
-
-### Silicone Mold Drawing
-
-![Mold Drawing](Tire/silicone-mold-drawing.png)
-
-### Real Tire
-
-![Custom Tire](Tire/custom-tire.jpg)
-
-### Real Mold
-
-![Silicone Mold](Tire/silicone-mold.jpg)
+<img width="734" height="632" alt="Снимок экрана 2026-10-03 122649" src="https://github.com/user-attachments/assets/a170aea0-e9b0-4c8d-ad1f-32a0c68e60f7" />
 
 ---
 
@@ -226,7 +195,7 @@ Practice and testing videos are available in:
 [(https://www.youtube.com/shorts/87kwGJLpC5M)]
 ### Line practice
 [(https://www.youtube.com/shorts/C6_rVJTeaqk)]
-The collection includes line-following tests and wall-climbing demonstrations.
+
 
 ---
 
