@@ -222,9 +222,10 @@ The robot was tested for:
 # 🎥 Videos
 
 Practice and testing videos are available in:
-
-
-
+### Vacuum practice
+[(https://www.youtube.com/shorts/87kwGJLpC5M)]
+### Line practice
+[(https://www.youtube.com/shorts/C6_rVJTeaqk)]
 The collection includes line-following tests and wall-climbing demonstrations.
 
 ---
