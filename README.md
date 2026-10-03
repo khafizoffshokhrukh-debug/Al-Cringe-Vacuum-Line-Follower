@@ -1,10 +1,11 @@
 #  Al Cringe Vacuum Line Follower
 
-<p align="center">
+<img width="1004" height="1280" alt="photo_2026-10-03_12-21-54" src="https://github.com/user-attachments/assets/9178511c-dc4b-4f79-bf8d-02abb2b8012f" />
+
 
 **Vacuum Wall-Climbing Line Following Robot**
 
-**ESP32-WROOM • PID Control • OLED • Custom Tires**
+**ESP32-WROOM • PID Control • Custom PCB • Custom Tires**
 
 </p>
 
@@ -12,36 +13,120 @@
 
 ## 🚀 About the Project
 
-This is a custom **line-following robot built on our Al Cringe Line Follower PCB platform**.
+This is a custom **line-following robot developed on our Al Cringe platform**.
 
-The robot uses a **vacuum system** that allows it to move not only on normal surfaces but also **on vertical walls**.
+The robot uses a **vacuum adhesion system**, allowing it to follow lines on normal surfaces and move on vertical walls.
 
-The robot was equipped with an improved electronics and control system, including an OLED display, multiple sensors and on-robot PID tuning.
+The project includes the complete development process, from **PCB and mechanical CAD design to custom tire manufacturing, assembly and testing**.
 
 ---
 
 ## ✨ Main Features
 
 - 🧠 **ESP32-WROOM**
-- 🔋 **LM step-down converter**
 - ⚙️ **TB6612FNG motor driver**
+- 🔋 **Step-down converter**
 - 🖥️ **OLED display**
 - 👁️ **9-line bumper sensor**
 - 📡 **I2C flash sensor**
-- 🌐 PID-based line following
-- 🔘 **2 buttons for PID tuning**
+- 🧠 **PID line-following**
+- 🔘 **2 buttons for Kp / Ki / Kd tuning**
 - 🧲 **Vacuum wall-climbing system**
-- 🛞 **Custom-built tires**
-- 🧪 Custom silicone mold for tire production
-- 📐 Custom CAD design
+- 🛞 **Custom tires**
+- 🧪 **Custom silicone tire mold**
+- 📐 Complete robot CAD model
+- 🔌 Custom PCB design
 
 ---
 
-## 🧠 PID Tuning
+# 📐 CAD & Mechanical Design
 
-One of the main convenience features is the ability to adjust the PID parameters directly from the robot using **two buttons**.
+The project includes a **complete CAD model of the robot**, including its mechanical structure and assembly.
 
-We can configure:
+### Full Robot CAD
+
+![Full Robot CAD](CAD/full-robot-model.png)
+
+### Exploded View
+
+![Exploded View](CAD/robot-exploded-view.png)
+
+### Robot Assembly
+
+![Robot Assembly](CAD/robot-assembly.png)
+
+### Chassis
+
+![Chassis](CAD/chassis.png)
+
+---
+
+# 🔌 PCB Design
+
+A custom PCB was designed specifically for the robot.
+
+The repository contains:
+
+- PCB schematic
+- PCB layout
+- PCB 3D model
+- Real manufactured PCB
+- Front and back views
+
+### Schematic
+
+<img width="1286" height="735" alt="Снимок экрана 2026-10-03 121224" src="https://github.com/user-attachments/assets/8ff461e5-7843-4a96-a139-4234f5478749" />
+
+
+### PCB 3D Model
+
+<img width="1001" height="715" alt="Снимок экрана 2026-10-03 121304" src="https://github.com/user-attachments/assets/e98f09cc-0eca-4b93-ad57-cd1bfce1e007" />
+
+
+### Real PCB
+
+<img width="640" height="601" alt="unnamed" src="https://github.com/user-attachments/assets/c48bde0b-ea6f-4206-8116-aa5f87ae5afa" />
+
+
+---
+
+# 🛞 Custom Tire & Silicone Mold
+
+One of the most important mechanical parts of the project is the **custom-designed tire**.
+
+The tire was designed specifically for the robot, and a **custom silicone mold** was also designed and produced for manufacturing the tires.
+
+### Tire CAD
+
+![Tire CAD](Tire/tire-cad.png)
+
+### Tire Drawing
+
+![Tire Drawing](Tire/tire-drawing.png)
+
+### Silicone Mold CAD
+
+![Mold CAD](Tire/silicone-mold-cad.png)
+
+### Silicone Mold Drawing
+
+![Mold Drawing](Tire/silicone-mold-drawing.png)
+
+### Real Tire
+
+![Custom Tire](Tire/custom-tire.jpg)
+
+### Real Mold
+
+![Silicone Mold](Tire/silicone-mold.jpg)
+
+---
+
+# 🧠 PID Control & Tuning
+
+The robot uses a **PID algorithm** for line following.
+
+The main parameters are:
 
 ```text
 Kp
@@ -49,193 +134,145 @@ Ki
 Kd
 ```
 
-This allows us to tune the robot without repeatedly changing the firmware.
+Instead of uploading new code every time we change the PID values, the robot can be configured directly using **two buttons** and the OLED display.
 
-The **OLED display** is used to show the selected settings and values.
+This makes PID tuning faster during testing and competition preparation.
 
 ---
 
-## 🖥️ OLED Interface
+# 🖥️ OLED Interface
 
-The OLED provides information about the robot's configuration and PID settings.
+The OLED display shows the selected settings and PID values during configuration.
 
 ![OLED](Electronics/oled.jpg)
 
 ---
 
-## 🧲 Vacuum Wall-Climbing System
+# 🧲 Vacuum Wall Climbing
 
-The robot uses a vacuum-based adhesion system that allows it to move on **vertical surfaces and walls**.
+The robot uses a vacuum system to maintain contact with vertical surfaces.
 
-This required careful attention to:
+This required careful mechanical design and testing of:
 
-- Weight distribution
+- Robot weight distribution
 - Tire contact
 - Vacuum sealing
-- Mechanical design
-- Robot stability
+- Stability
+- Grip
 
-![Vacuum System](Robot/vacuum-system.jpg)
-
----
-
-## 🛞 Custom Tires
-
-The tires were **custom designed and manufactured** specifically for this robot.
-
-The tire design was created in CAD, and a **custom silicone mold** was also designed and produced for making the tires.
-
-### Tire Design
-
-![Custom Tire](Tire/custom-tire.jpg)
-
-### Silicone Mold
-
-![Silicone Mold](Tire/silicone-mold.jpg)
+![Wall Climbing](Robot/wall-climbing.jpg)
 
 ---
 
-## ⚡ Electronics
+# ⚡ Electronics
 
 | Component | Purpose |
 |---|---|
 | **ESP32-WROOM** | Main controller |
 | **TB6612FNG** | Motor control |
-| **LM Step-Down** | Voltage regulation |
-| **OLED Display** | Settings / information |
+| **Step-Down Converter** | Voltage regulation |
+| **OLED Display** | Settings and information |
 | **9-Line Bumper** | Line detection |
 | **I2C Flash Sensor** | Additional sensing |
 | **2 Buttons** | PID configuration |
 
 ---
 
-## 🔧 Development Process
+# 🔧 Development Process
 
 ```text
-Concept
- ↓
-CAD Design
- ↓
-Electronics
- ↓
-Vacuum System
- ↓
-Custom Tire Design
- ↓
-Silicone Mold
- ↓
-Assembly
- ↓
-PID Tuning
- ↓
-Testing
- ↓
-Final Robot
+💡 Concept
+   ↓
+📐 Full Robot CAD
+   ↓
+🔌 PCB Design
+   ↓
+🛞 Tire Design
+   ↓
+🧪 Silicone Mold Design
+   ↓
+⚙️ Electronics Assembly
+   ↓
+🤖 Robot Assembly
+   ↓
+🧠 PID Tuning
+   ↓
+🧲 Wall Testing
+   ↓
+🚀 Final Robot
 ```
 
 ---
 
-## 📐 CAD
+# 🧪 Testing
 
-The project includes CAD files for:
-
-- Robot structure
-- Mechanical components
-- Custom tires
-- Silicone mold
-- Assembly
-
-![CAD](CAD/assembly.png)
-
----
-
-## 🧪 Testing
-
-The robot was tested on both normal surfaces and vertical walls.
-
-Testing included:
+The robot was tested for:
 
 - Line following
 - PID tuning
-- Sensor testing
+- Sensor performance
+- Motor control
 - Vacuum adhesion
-- Wall movement
+- Wall climbing
 - Tire grip
 - Overall stability
 
-![Testing](Development/testing.jpg)
-
 ---
 
-## 📸 Gallery
-
-![Robot](Robot/final-robot.jpg)
-
-![Wall Climbing](Robot/wall-climbing.jpg)
-
-![Custom Tire](Tire/custom-tire.jpg)
-
-![PCB](Electronics/pcb.jpg)
-
----
-
-## 🎥 Videos
+# 🎥 Videos
 
 Practice and testing videos are available in:
 
-```text
-Videos/
-```
 
-YouTube links:
 
-- ▶️ Wall-Climbing Test
-- ▶️ Line Following Test
-- ▶️ Robot Practice
+The collection includes line-following tests and wall-climbing demonstrations.
 
 ---
 
-## 🧠 Skills Developed
+# 🧠 Skills Developed
 
 - 🤖 Line-following robotics
 - 🧠 PID control
 - ⚡ ESP32 electronics
-- 🖥️ Embedded OLED interface
-- 🔧 Mechanical engineering
-- 📐 CAD design
-- 🧲 Vacuum adhesion systems
+- 🔌 PCB design
+- 📐 Full robot CAD modeling
 - 🛞 Custom tire design
-- 🧪 Silicone mold design and production
-- 🔩 Robot assembly and testing
+- 🧪 Silicone mold design
+- 🧲 Vacuum adhesion systems
+- 🔩 Mechanical assembly
+- 🧪 Testing and tuning
 
 ---
 
-## 📊 Project Summary
+# 📊 Project Summary
 
 | Category | Details |
 |---|---|
 | 🤖 Robot | **Al Cringe Vacuum Line Follower** |
 | 🧠 Controller | **ESP32-WROOM** |
-| ⚙️ Driver | **TB6612FNG** |
+| ⚙️ Motor Driver | **TB6612FNG** |
 | 🖥️ Display | **OLED** |
 | 👁️ Sensors | **9-Line Bumper + I2C Flash Sensor** |
-| 🔘 PID Control | **Kp / Ki / Kd** |
-| 🔘 Tuning | **2 Buttons** |
+| 🧠 Control | **PID** |
+| 🔘 Tuning | **2 Buttons — Kp / Ki / Kd** |
 | 🧲 Special Feature | **Vacuum Wall Climbing** |
-| 🛞 Tires | **Custom Designed** |
+| 🛞 Tire | **Custom Designed** |
 | 🧪 Mold | **Custom Silicone Mold** |
-| 📐 CAD | **Custom Mechanical Design** |
+| 🔌 PCB | **Custom Designed** |
+| 📐 CAD | **Complete Robot CAD Model** |
 
 ---
 
 # 🚀 Final Result
 
-This project combines **line following, PID control, embedded electronics, vacuum adhesion and custom mechanical manufacturing** in one robot.
+This project combines **robotics, PCB design, CAD, PID control, custom tire manufacturing and vacuum wall climbing** into one complete system.
 
-The most distinctive part of the project is the combination of **wall-climbing capability and custom-designed tires produced using a custom silicone mold**.
+The repository documents the project from **schematic and CAD design to custom manufacturing, assembly and real-world testing**.
 
 <p align="center">
 
-**Designed • Built • Tuned • Tested**
+## 🤖 Designed • Built • Tuned • Tested
+
+**Al Cringe Vacuum Line Follower**
 
 </p>
